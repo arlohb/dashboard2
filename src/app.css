@@ -1,0 +1,5 @@
+/* CSS doesn't go in this file, it just loads tailwind. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
