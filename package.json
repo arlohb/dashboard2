@@ -12,22 +12,22 @@
     "lint": "prettier --plugin-search-dir . --check . && eslint ."
   },
   "devDependencies": {
-    "typescript": "5.0",
+    "typescript": "5.1",
     "tslib": "2.5",
 
     "vite": "4.3",
-    "svelte": "3.59",
-    "svelte-check": "3.3",
+    "svelte": "4.0",
+    "svelte-check": "3.4",
     "@tsconfig/svelte": "4.0",
     "@sveltejs/vite-plugin-svelte": "2.4",
 
     "cors-anywhere": "0.4",
 
-    "eslint": "8.42",
+    "eslint": "8.43",
     "eslint-config-prettier": "8.8",
-    "eslint-plugin-svelte3": "4.0",
-    "@typescript-eslint/parser": "5.59",
-    "@typescript-eslint/eslint-plugin": "5.59",
+    "eslint-plugin-svelte": "2.31",
+    "@typescript-eslint/parser": "5.60",
+    "@typescript-eslint/eslint-plugin": "5.60",
 
     "prettier": "2.8",
     "prettier-plugin-svelte": "2.10",

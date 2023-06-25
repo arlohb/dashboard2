@@ -3,7 +3,10 @@
     nixpkgs.url = "nixpkgs/nixos-unstable";
   };
   outputs = { self, nixpkgs }: let
-    pkgs = nixpkgs.legacyPackages.x86_64-linux.pkgs;
+    pkgs = import "${nixpkgs}" {
+      system = "x86_64-linux";
+      config.allowUnfree = true;
+    };
   in {
     devShells.x86_64-linux.default = pkgs.mkShell {
       buildInputs = with pkgs; [
