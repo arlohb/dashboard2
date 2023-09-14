@@ -17,10 +17,11 @@
   class="w-screen h-screen p-4 grid grid-rows-4 grid-cols-3 gap-4 bg-darker"
 >
   {#if haConnErr}
-    <P>{haConnErr}</P>
+    <Dashboard ha={false} />
+    <!--<P>{haConnErr}</P>-->
   {:else if !$haConn || !$haEntities}
     <P>Loading home assistant</P>
   {:else}
-    <Dashboard />
+    <Dashboard ha={true} />
   {/if}
 </main>

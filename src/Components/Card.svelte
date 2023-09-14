@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class={`bg-dark rounded-lg shadow-md shadow-black border-2 border-purple ${addedClasses}`}
+  class={`bg-dark p-3 rounded-lg shadow-md shadow-black border-2 border-purple ${addedClasses}`}
   {style}
 >
   <slot />
